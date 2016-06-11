@@ -1,0 +1,160 @@
+body{
+        padding: 0;
+        margin: 0;
+        background-color: #000;
+    }
+    .wrap{
+        position: relative;
+        width: 1300px;
+        height: 800px;
+        margin: 1% auto;
+    }
+        .sun{
+            position: relative;
+            top: 400px;
+            left: 45%;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: -webkit-linear-gradient(#FBFB0E,#F3F305);
+            box-shadow: 0 0 50px #fc0;
+        }
+        .mercury-orbit{
+            position: absolute;
+            top: 45.5%;
+            left: 42.4%;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 1px solid #6D6868;
+            animation: orbit 10s infinite linear;
+        }
+        .mercury{
+            position: absolute;
+            margin-left: 6%;
+            margin-top: 17%;
+            width: 10px;
+            height: 10px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+
+        .venes-orbit{
+            position: absolute;
+            top: 40%;
+            left: 39.4%;
+            width: 230px;
+            height: 230px;
+            border-radius: 50%;
+            border: 1px solid #6D6868;
+            animation: orbit 20s infinite linear;
+        }
+        .venes{
+            position: absolute;
+            margin-left: 65px;
+            margin-top: 93%;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            background-color: #fc2;
+        }
+
+        .earth-orbit{
+            position: absolute;
+            left: 36.5%;
+            top: 35%;
+            width: 300px;
+            height: 300px;
+            border: 1px solid #6D6868;
+            border-radius: 50%;
+            animation: orbit 19s infinite linear;
+        }
+        .earth{
+            position: absolute;
+            left: 84%;
+            top: 80%;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            background-color: #1010D1;
+            animation: orbit 5s infinite linear;
+        }
+        .moon-orbit{
+            position: absolute;
+            top: -42%;
+            left: -42%;
+            width: 37px;
+            height: 37px;
+            border: 1px solid #555151;
+            border-radius: 50%;
+        }
+        .moon{
+            position: absolute;
+            margin-left: 18%;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: #C3C2C2;
+        }
+        .mars-orbit{
+            position: absolute;
+            top: 30%;
+            left: 34%;
+            width: 370px;
+            height: 370px;
+            border: 1px solid #6D6868;
+            border-radius: 50%;
+            animation: orbit 17s infinite linear;
+        }
+        .mars{
+            position: absolute;
+            margin-top: -2%;
+            margin-left: 40%;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-color: #EB2F0A;
+        }
+        .jupiter-orbit{
+            position: absolute;
+            top: 25%;
+            left: 31%;
+            width: 450px;
+            height: 450px;
+            border: 1px solid #6d6868;
+            border-radius: 50%;
+            animation: orbit 31s infinite linear;
+        }
+        .jupiter{
+            position: absolute;
+            margin-left: 96%;
+            margin-top: 60%;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: #A9A909;
+        }
+        .saturn-orbit{
+            position: absolute;
+            top: 19%;
+            left: 27.5%;
+            width: 540px;
+            height: 540px;
+            border: 1px solid #6d6868;
+            border-radius: 50%;
+            animation: orbit 50s infinite linear;
+        }
+        .saturn{
+            position: absolute;
+            top: 50%;
+            left: -3%;
+            height: 36px;
+            width: 36px;
+            border-radius: 50%;
+            background-color: #6E692E;
+        }
+
+
+        @-webkit-keyframes orbit {
+            100% { transform: rotate(360deg); }
+        }
